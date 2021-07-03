@@ -1,0 +1,98 @@
+
+Java Practice
+
+// console.log("Hello, World!")
+// console.log(23+97)
+// let a = 10, b = 11;
+// let name = "User"
+// // alert(`Hello ${name}`)
+// console.log(a+b)
+// let age = prompt('What is your age?', 18);
+
+// alert(`This is a test ${a}
+// ${age}`)
+
+
+// function maths() {
+   
+//   let num1 = document.getElementById("num1").value;
+//   let num2 = document.getElementById("num2").value;
+//   let string1 = document.getElementById("string1").value;
+ 
+//   let op1 = add7(num1);
+
+//   alert(`Test of ${num1}+7=${op1}`)
+//     // subFunction1(num1);
+//     // subFunction2();
+//     // subFunction3();
+//   }
+  
+//   function add7(a) {
+//     a = a + 7;
+//     console.log(a);   
+//   }
+  
+//   function subFunction2(a) {
+//     console.log(a);
+//   }
+  
+//   function subFunction3(a) {
+//     console.log(a);
+//   }
+
+
+
+
+
+function maths() {
+  let num1 = 5;
+  let num2 = 2;
+  let string1 = "fish Tacos";
+  
+  op1 = add7(num1);
+  op2 = multiply(op1,num2);
+  op3 = capitalize(string1);
+  op4 = lastLetter(string1);
+  alert(`Test one is 12 = ${op1}?
+Test two is 24 = ${op2}?
+Test three is Fish Tacos = ${op3}, not ${string1}
+Test four is s = ${op4}?`)
+}
+
+function add7(a){
+  return a + 7;
+}
+
+function multiply(a,b){
+  return a*b;
+}
+
+function capitalize(a){
+  return a.charAt(0).toUpperCase() + a.slice(1); 
+}
+function lastLetter(a){
+  return a.slice(-1);
+}
+// maths();
+  
+
+function fizzbuzz(){
+  let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+  for(let i = 1; i<=answer; i++){
+    if(i%3 == 0 && i%5 == 0){
+      console.log(i,`Fizz Buzz`);
+    }
+    else if (i%3 == 0){
+      console.log(i,`Fizz`);
+    }
+    else if (i%5 == 0){
+      console.log(i,`Buzz`);
+    }
+    else{
+      console.log(i);
+    }
+
+  }
+}
+
+fizzbuzz();
